@@ -22,5 +22,6 @@ class Migration(migrations.Migration):
                 ('discount', models.IntegerField(validators=[django.core.validators.MinValueValidator(0), django.core.validators.MaxValueValidator(100)])),
                 ('active', models.BooleanField()),
             ],
+
         ),
     ]

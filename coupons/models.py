@@ -12,5 +12,7 @@ class Coupon(models.Model):
                                                MaxValueValidator(100)])
     active = models.BooleanField()
 
+
+
     def __str__(self):
         return self.code
