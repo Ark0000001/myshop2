@@ -17,5 +17,7 @@ class ProductAdmin(TranslatableAdmin):
     list_filter = ['available', 'created', 'updated']
     list_editable = ['price', 'available']
 
+    # list_display_links = ('name', 'slug')
+
     def get_prepopulated_fields(self, request, obj=None):
         return {'slug': ('name',)}

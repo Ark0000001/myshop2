@@ -25,7 +25,7 @@ SECRET_KEY = 'uw64iln@*swuntu(f7!@7eyxbqrv78eiw4e+alb_7vun-wec)a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '48f58a08cb59.ngrok.io']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'c53295cfbf73.ngrok.io']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'coupons.apps.CouponsConfig',
     'rosetta',
     'parler',
+    'localflavor',
 ]
 
 MIDDLEWARE = [
@@ -173,3 +174,8 @@ PARLER_LANGUAGES = {
         'hide_untranslated': False,
     }
 }
+
+# redis config
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
